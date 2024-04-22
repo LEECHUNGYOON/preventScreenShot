@@ -1,0 +1,17 @@
+{
+  "name": "com.u4a.preventScreen",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "com.u4a.preventScreen",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "",
+  "license": "ISC"
+}

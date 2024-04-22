@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="com.u4a.preventScreen" version="0.0.1">
+  <name>preventScreen</name>
+  <js-module name="preventScreen" src="www/preventScreen.js">
+    <clobbers target="u4a.plugins.preventScreen"/>
+  </js-module>
+  <platform name="ios">
+    <config-file parent="/*" target="config.xml">
+      <feature name="preventScreen">
+        <param name="ios-package" value="preventScreen" onload="true"/>
+      </feature>
+    </config-file>    
+    <header-file src="src/ios/preventScreen-Bridging-Header.h" />
+    <!-- <source-file src="src/ios/UIView+preventScreen.swift" /> -->
+    <source-file src="src/ios/preventScreen.swift"/>  
+    <dependency id="cordova-plugin-add-swift-support" version="*" />  
+  </platform>
+</plugin>
